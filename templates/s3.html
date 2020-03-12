@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cloud simulator</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static',filename='img/icon.jpeg')}}" rel="icon">
+  <link href="{{url_for('static',filename='img/icon.jpeg')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='vendor/animate.css/animate.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='vendor/venobox/venobox.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='vendor/aos/aos.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v2.0.1
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>Cloud Simulator</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">ADMIN : {{user}}</a></li>
+
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Blog Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>INFRASTRUCTURE SERVICE</h2>
+
+          <ol>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li>INFRA</li>
+          </ol>
+        </div>
+
+      </div>
+
+    </section><!-- End Blog Section -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<body class="container-fluid">
+  <p><br></p>
+  <div class="container-fluid">
+  <hr>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="{{url_for('static',filename='img/s3b.png')}}" alt="Los Angeles" style="width:100%;">
+      </div>
+    </div>
+  </div>
+</div>
+  <hr>
+  <h1> AWS S3 Bucket</h1>
+   <div class="panel panel-danger">
+      <div class="panel-heading">Upload a file to server</div>
+    <div class="panel-body">
+      <h1>Upload a file:</h1>
+        <form action="/uploader" method="post" enctype="multipart/form-data">
+          <input type="file"  name="file1"><br>
+          <button type="submit" class="btn btn-info">Submit</button>
+          <h1><font color="green"></font></h1>
+      </form>
+    </div>
+
+  <div class="panel panel-danger">
+      <div class="panel-heading">S3 Buckets</div>
+    <div class="panel-body"><a href="/s3/1"><button type="button" class="btn btn-info">Show existing buckets</button></a>
+
+      <hr>
+<div class="container">
+  {% for i in response%}
+      <div class="well well-lg" style="background-color:#9ae59a;">{{ i }}</div>
+    {% endfor %}
+    </div>
+
+  </div>
+<hr>
+
+</body>
+
+
+
+{% endblock %}
